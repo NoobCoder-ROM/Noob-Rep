@@ -1,0 +1,167 @@
+<?php
+// Data for the resume
+$name = "Romeo Pacaña";
+$jobTitle = "Web Developer";
+$contact = [
+    'email' => 'rome9@gmail.com',
+    'phone' => '(+63) 948-456-7890',
+    'Fb' => 'Pacaña Romeo',
+    'github' => 'Pacana Rome', 
+];
+$summary = "Dynamic web developer with over 7 years of experience in building responsive and user-centric web applications. Expertise in modern frameworks and a strong commitment to optimizing performance and enhancing user experience.";
+$skills = ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL', 'React', 'Node.js'];
+$experience = [
+    [
+        'title' => 'Lead Web Developer',
+        'company' => 'Innovative Tech',
+        'duration' => '2033 - Present',
+        'description' => 'Spearheaded the development of high-traffic web applications, leading a team of developers to implement best practices in coding and design, while ensuring optimal performance and user satisfaction.'
+    ],
+    [
+        'title' => 'Web Developer',
+        'company' => 'Creative Solutions',
+        'duration' => '2029 - 2033',
+        'description' => 'Designed and developed client websites and applications, collaborating with cross-functional teams to deliver innovative solutions and improve user engagement.'
+    ],
+    [
+        'title' => 'Intern Web Developer',
+        'company' => 'Startup Hub',
+        'duration' => '2026 - 2029',
+        'description' => 'Gained practical experience in web development, contributing to various projects and learning agile methodologies in a fast-paced environment.'
+    ]
+];
+$education = [
+    [
+        'degree' => 'Bachelor of Science in Information Technology',
+        'institution' => 'Guimaras State University',
+        'year' => '2026'
+    ]
+];
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $name; ?>'s Resume</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.contact-info {
+    margin: 10px 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.summary, .skills, .experience, .education {
+    margin: 20px 0;
+}
+
+h3 {
+    border-bottom: 2px solid #6a11cb;
+    padding-bottom: 5px;
+}
+
+.job, .edu {
+    background: #e7f3ff;
+    border-left: 5px solid #6a11cb;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #d1e7dd;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+</style>
+<body>
+    <div class="container">
+        <header>
+            <h1><?php echo $name; ?></h1>
+            <h2><?php echo $jobTitle; ?></h2>
+            <div class="contact-info">
+                <p>Email: <?php echo $contact['email']; ?></p>
+                <p>Phone: <?php echo $contact['phone']; ?></p>
+                <p>Facebook: <a href="https://www.facebook.com/share/1GPZ1JmpUa/" target="_blank"><?php echo $contact['Fb']; ?></a></p>
+                <p>GitHub: <a href="https://github.com/<?php echo $contact['github']; ?>" target="_blank"><?php echo $contact['github']; ?></a></p>
+            </div>
+        </header>
+        <section class="summary">
+            <h3>Summary</h3>
+            <p><?php echo $summary; ?></p>
+        </section>
+        <section class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <?php foreach ($skills as $skill): ?>
+                    <li><?php echo $skill; ?></li>
+                <?php endforeach; ?>
+            </ul>
+        </section>
+        <section class="experience">
+            <h3>Experience</h3>
+            <?php foreach ($experience as $job): ?>
+                <div class="job">
+                    <h4><?php echo $job['title']; ?> at <?php echo $job['company']; ?></h4>
+                    <p><em><?php echo $job['duration']; ?></em></p>
+                    <p><?php echo $job['description']; ?></p>
+                </div>
+            <?php endforeach; ?>
+        </section>
+        <section class="education">
+            <h3>Education</h3>
+            <?php foreach ($education as $edu): ?>
+                <div class="edu">
+                    <h4><?php echo $edu['degree']; ?> from <?php echo $edu['institution']; ?></h4>
+                    <p><em><?php echo $edu['year']; ?></em></p>
+                </div>
+            <?php endforeach; ?>
+        </section>
+    </div>
+</body>
+</html>
