@@ -5,7 +5,7 @@ $jobTitle = "Web Developer";
 $contact = [
     'email' => 'rome9@gmail.com',
     'phone' => '(+63) 948-456-7890',
-    'Fb' => 'Pacaña Romeo',
+    'Fb' => 'Pacana Rome',
     'github' => 'Pacana Rome', 
 ];
 $summary = "Dynamic web developer with over 7 years of experience in building responsive and user-centric web applications. Expertise in modern frameworks and a strong commitment to optimizing performance and enhancing user experience.";
@@ -127,7 +127,7 @@ li {
             <div class="contact-info">
                 <p>Email: <?php echo $contact['email']; ?></p>
                 <p>Phone: <?php echo $contact['phone']; ?></p>
-                <p>Facebook: <a href="https://www.facebook.com/share/1GPZ1JmpUa/" target="_blank"><?php echo $contact['Fb']; ?></a></p>
+                <p>Facebook: <a href="https://www.facebook.com/share/1LPZ1JmpUa/" target="_blank"><?php echo $contact['Fb']; ?></a></p>
                 <p>GitHub: <a href="https://github.com/<?php echo $contact['github']; ?>" target="_blank"><?php echo $contact['github']; ?></a></p>
             </div>
         </header>
