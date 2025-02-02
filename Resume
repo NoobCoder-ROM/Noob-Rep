@@ -5,29 +5,29 @@ $jobTitle = "Web Developer";
 $contact = [
     'email' => 'rome9@gmail.com',
     'phone' => '(+63) 948-456-7890',
-    'Fb' => 'Pacana Rome',
-    'github' => 'Pacana Rome', 
+    'Fb' => 'Pacaña Romeo',
+    'github' => 'PacanaRome', 
 ];
-$summary = "Dynamic web developer with over 7 years of experience in building responsive and user-centric web applications. Expertise in modern frameworks and a strong commitment to optimizing performance and enhancing user experience.";
-$skills = ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL', 'React', 'Node.js'];
+$summary = "Dynamic web developer with over 8 years of experience in creating responsive and interactive web applications. Proficient in modern web technologies and frameworks, with a strong focus on performance and user experience.";
+$skills = ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL', 'React', 'Node.js', 'RESTful APIs'];
 $experience = [
     [
-        'title' => 'Lead Web Developer',
-        'company' => 'Innovative Tech',
-        'duration' => '2033 - Present',
-        'description' => 'Spearheaded the development of high-traffic web applications, leading a team of developers to implement best practices in coding and design, while ensuring optimal performance and user satisfaction.'
+        'title' => 'Senior Web Developer',
+        'company' => 'Innovative Solutions',
+        'duration' => '2032 - Present',
+        'description' => 'Leading a team of developers to build high-quality web applications, implementing best practices in coding and design, and ensuring project deadlines are met.'
     ],
     [
         'title' => 'Web Developer',
-        'company' => 'Creative Solutions',
-        'duration' => '2029 - 2033',
-        'description' => 'Designed and developed client websites and applications, collaborating with cross-functional teams to deliver innovative solutions and improve user engagement.'
+        'company' => 'Creative Agency',
+        'duration' => '2028 - 2032',
+        'description' => 'Developed and maintained client websites, focusing on user experience and accessibility, while collaborating with designers and project managers.'
     ],
     [
-        'title' => 'Intern Web Developer',
-        'company' => 'Startup Hub',
-        'duration' => '2026 - 2029',
-        'description' => 'Gained practical experience in web development, contributing to various projects and learning agile methodologies in a fast-paced environment.'
+        'title' => 'Junior Web Developer',
+        'company' => 'Tech Startups',
+        'duration' => '2026 - 2028',
+        'description' => 'Contributed to the development of web applications, gaining hands-on experience in both front-end and back-end technologies, and participating in code reviews.'
     ]
 ];
 $education = [
@@ -45,12 +45,13 @@ $education = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $name; ?>'s Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <style>
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Light text color */
     margin: 0;
     padding: 20px;
 }
@@ -58,18 +59,18 @@ body {
 .container {
     max-width: 800px;
     margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #2a2a2a; /* Darker container */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 header {
     text-align: center;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #4a90e2, #50e3c2); /* Cool gradient background */
     color: white;
-    padding: 20px;
-    border-radius: 8px 8px 0 0;
+    padding: 30px;
+    border-radius: 15px 15px 0 0;
 }
 
 h1 {
@@ -80,31 +81,61 @@ h1 {
 h2 {
     margin: 0;
     font-size: 1.5em;
+    font-weight: 400;
 }
 
 .contact-info {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .contact-info p {
     margin: 5px 0;
 }
 
+.contact-info a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
 .summary, .skills, .experience, .education {
-    margin: 20px 0;
+    margin: 25px 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.summary {
+    background-color: #3a3a3a; /* Darker gray */
+}
+
+.skills {
+    background-color: #4a4a4a; /* Medium gray */
+}
+
+.experience {
+    background-color: #5a5a5a; /* Lighter gray */
+}
+
+.education {
+    background-color: #6a6a6a; /* Even lighter gray */
 }
 
 h3 {
-    border-bottom: 2px solid #6a11cb;
+    border-bottom: 2px solid #4a90e2;
     padding-bottom: 5px;
+    font-size: 1.5em;
 }
 
 .job, .edu {
-    background: #e7f3ff;
-    border-left: 5px solid #6a11cb;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
+    background: #2a2a2a;
+    border-left: 5px solid #4a90e2;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
 }
 
 ul {
@@ -113,7 +144,7 @@ ul {
 }
 
 li {
-    background: #d1e7dd;
+    background: #4a4a4a; /* Medium gray */
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
@@ -125,9 +156,9 @@ li {
             <h1><?php echo $name; ?></h1>
             <h2><?php echo $jobTitle; ?></h2>
             <div class="contact-info">
-                <p>Email: <?php echo $contact['email']; ?></p>
+                <p>Email: <a href="mailto:<?php echo $contact['email']; ?>"><?php echo $contact['email']; ?></a></p>
                 <p>Phone: <?php echo $contact['phone']; ?></p>
-                <p>Facebook: <a href="https://www.facebook.com/share/1LPZ1JmpUa/" target="_blank"><?php echo $contact['Fb']; ?></a></p>
+                <p>Facebook: <a href="https://www.facebook.com/share/1GPZ1JmpUa/" target="_blank"><?php echo $contact['Fb']; ?></a></p>
                 <p>GitHub: <a href="https://github.com/<?php echo $contact['github']; ?>" target="_blank"><?php echo $contact['github']; ?></a></p>
             </div>
         </header>
